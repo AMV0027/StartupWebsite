@@ -1,0 +1,40 @@
+
+.starfield {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.star {
+    position: absolute;
+    background-color: white; /* Color of the stars */
+    border-radius: 50%;
+    width: 2px; /* Size of the stars */
+    height: 2px; /* Size of the stars */
+    animation: blink 1s infinite; /* Animation for blinking */
+}
+
+/* Keyframes for blinking effect */
+@keyframes blink {
+    0%, 20%, 100% {
+        opacity: 0; /* Invisible at the start and end */
+    }
+    10%, 30% {
+        opacity: 1; /* Fully visible in the middle */
+    }
+}
+
+/* Randomly position stars */
+.star:nth-child(1) { top: 10%; left: 20%; animation-duration: 1.5s; }
+.star:nth-child(2) { top: 30%; left: 50%; animation-duration: 2s; }
+.star:nth-child(3) { top: 70%; left: 80%; animation-duration: 1.2s; }
+.star:nth-child(4) { top: 40%; left: 10%; animation-duration: 1.8s; }
+.star:nth-child(5) { top: 60%; left: 90%; animation-duration: 2.5s; }
+/* Add more stars with different positions and durations */
+.star:nth-child(6) { top: 20%; left: 70%; animation-duration: 1.3s; }
+.star:nth-child(7) { top: 80%; left: 30%; animation-duration: 1.7s; }
+.star:nth-child(8) { top: 50%; left: 60%; animation-duration: 2.2s; }
+.star:nth-child(9) { top: 90%; left: 40%; animation-duration: 1.4s; }
+.star:nth-child(10) { top: 15%; left: 85%; animation-duration: 1.6s; }
+
+/* Continue adding more stars as needed */
