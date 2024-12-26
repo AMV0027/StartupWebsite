@@ -27,10 +27,10 @@ const styles = StyleSheet.create({
 
 function ImgBlock({ source }) {
   return (
-    <Tilt>
+    <Tilt className="w-[200px] h-[200px]" >
       <img
         src={source}
-        className="w-[200px] h-[200px] rotate-left hover:drop-shadow-[0_0_10px_rgba(80,80,225,1)] transition-all ease-in-out "
+        className=" rotate-left hover:drop-shadow-[0_0_10px_rgba(80,80,225,1)] transition-all ease-in-out "
       />
     </Tilt>
   );
@@ -39,7 +39,7 @@ function ImgBlock({ source }) {
 function ServiceSection() {
   return (
     <div className="w-screen min-h-screen bg-[#00031D]">
-      <div className=" absolute flex flex-row justify-between w-full h-full">
+      <div className=" absolute flex flex-row justify-between w-full h-screen mt-64">
         <img src={lights} className="w-1/3 rotate-180" />
         <img src={lights} className="w-1/3" />
       </div>

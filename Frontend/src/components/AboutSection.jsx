@@ -27,9 +27,9 @@ const stats = [
 ];
 
   return (
-    <div className=' w-screen h-screen bg-[#00031D]  relative z-30 text-white flex flex-col justify-between'>
-        <div className=' flex flex-col md:flex-row  justify-evenly items-center w-screen h-full'>
-            <div className='w-1/2 flex flex-col items-center'>
+    <div className=' w-screen h-full bg-[#00031D]  relative z-30 text-white flex flex-col justify-between'>
+        <div className='mb-24 flex flex-col md:flex-row  justify-evenly items-center w-screen h-full'>
+            <div className='md:w-1/2 w-full flex flex-col items-center'>
                 <div>
                     <div className='flex gap-2 items-center text-xs'>
                         <div className='h-[1px] w-[40px] bg-white'></div>
@@ -49,7 +49,7 @@ const stats = [
                 </div>
             </div>
 
-            <div className='w-1/2 flex flex-col justify-center gap-3 pr-8'>
+            <div className='md:w-1/2 px-12 md:px-0 md:text-left text-justify w-full flex flex-col justify-center gap-3 md:pr-8 pr-12'>
                 <p className='text-sm font-semibold'>
                 We are a company focused on empowering businesses and individuals in the digital age. Our mission is to create visually appealing and functional digital pages tailored to each client's needs.
                 </p>
@@ -76,10 +76,14 @@ const stats = [
         </div>
         <marquee direction="right" behaviour="infinite" className='w-full h-[200px] flex items-center bg-gradient-to-r from-[#0C1634] via-[#889AAD] to-[#0C1634]'>
             <div className=' flex flex-row gap-24 justify-between items-center '>
-            <img src={logo1} className='h-full w-auto' />
-            <img src={logo2} className='h-full w-auto' />
-            <img src={logo3} className='h-full w-auto' />
-            <img src={logo4} className='h-full w-auto' />
+                <img src={logo1} className='h-full w-auto' />
+                <img src={logo2} className='h-full w-auto' />
+                <img src={logo3} className='h-full w-auto' />
+                <img src={logo4} className='h-full w-auto' />
+                <img src={logo1} className='h-full w-auto' />
+                <img src={logo2} className='h-full w-auto' />
+                <img src={logo3} className='h-full w-auto' />
+                <img src={logo4} className='h-full w-auto' />
             </div>
         </marquee>
     </div>

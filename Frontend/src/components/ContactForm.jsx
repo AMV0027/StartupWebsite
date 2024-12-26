@@ -1,76 +1,47 @@
 import React from "react";
 import msgimg from "../assets/mgBox.png";
+import { IoIosSend } from "react-icons/io";
 
+function LabelInput({labelName, placeHolder, type, name}){
+  return (
+    <div className="flex flex-col justify-start text-white w-full">
+      <p className="font-normal">
+        {labelName}
+      </p>
+      <input name={name} type={type} placeholder={placeHolder} className=" bg-transparent border-b-2 mt-2" />
+    </div>
+  );
+}
 const ContactForm = () => {
   return (
-    <section className="bg-[#00031D] text-white p-10">
+    <section className="bg-[#00031D] min-h-screen text-white p-10">
+            <hr className=' w-full mb-12 border-blue-300 opacity-40'/>
       <div className="max-w-4xl mx-auto">
         <p className="text-sm tracking-widest">Contact</p>
         <h1 className="text-4xl font-bold">Have a Project in mind?</h1>
         <p className="text-lg">Let's build something together!</p>
         <p className="mt-1 text-sm mb-12">-... ..- ... .. -. . ... ...</p>
 
-        <form className="bg-[#2e3b669a] p-8 rounded-lg shadow-lg h-[500px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* First Name */}
-            <div>
-              <label className="block text-sm mb-2">First Name</label>
-              <input
-                type="text"
-                placeholder="John"
-                className="w-full bg-transparent border-b border-gray-500 focus:border-white outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* Last Name */}
-            <div>
-              <label className="block text-sm mb-2">Last Name</label>
-              <input
-                type="text"
-                placeholder="Doe"
-                className="w-full bg-transparent border-b border-gray-500 focus:border-white outline-none py-2"
-                required
-              />
-            </div>
+        <form action="" className="flex flex-col justify-start gap-6 bg-gray-400 shadow-inner rounded-xl p-4 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10">
+          <div className="flex flex-row justify-between gap-3">
+            <LabelInput labelName="First name" placeHolder="John" name="First name" />
+            <LabelInput labelName="Last name" placeHolder="Doe" name="Last name" />
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {/* Email */}
-            <div>
-              <label className="block text-sm mb-2">Email</label>
-              <input
-                type="email"
-                placeholder="xxx@email.com"
-                className="w-full bg-transparent border-b border-gray-500 focus:border-white outline-none py-2"
-                required
-              />
-            </div>
-
-            {/* Subject */}
-            <div>
-              <label className="block text-sm mb-2">Subject</label>
-              <input
-                type="text"
-                placeholder="Requesting Demo"
-                className="w-full bg-transparent border-b border-gray-500 focus:border-white outline-none py-2"
-                required
-              />
-            </div>
+          <div className="flex flex-row justify-between gap-3">
+            <LabelInput labelName="Email" placeHolder="xxxx@email.com" type="email" name="Email" />
+            <LabelInput labelName="Subject" placeHolder="Requesting Demo" name="Subject" />
           </div>
-
-          {/* Message */}
-          <div className="mt-6 relative">
-            <label className="block text-sm mb-2">Your Message</label>
-            <textarea
-              placeholder="Your Message..."
-              rows={8}
-              className="w-full border-[1px] bg-transparent p-3 overflow-hidden active:border-none focus-visible:"
-              required
-            />
-            {/* Send Button */}
-          </div>
+          <textarea id="" name="Message" rows="8" placeholder="Your message..."
+          className="bg-transparent border-[1px] rounded-xl p-3 resize-none mt-2"
+          >
+            Your Message ...
+          </textarea>
         </form>
+          <div className="flex flex-row justify-end">
+            <button className="relative -top-16 right-6 rounded-full p-2 text-xl bg-blue-800">
+                <IoIosSend />
+            </button>
+          </div>
       </div>
     </section>
   );

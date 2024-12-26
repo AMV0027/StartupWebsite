@@ -8,7 +8,7 @@ function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <header className="fixed w-full z-50 top-0 text-white shadow-lg">
+        <header className="fixed w-full z-50 top-0 text-white backdrop-blur-md shadow-lg">
             {/* Top bar */}
             <div className="p-5 flex justify-between items-center">
                 <h1 className="text-lg font-logo">Lexora Labs</h1>
