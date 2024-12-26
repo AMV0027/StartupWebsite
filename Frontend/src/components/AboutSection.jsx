@@ -34,6 +34,7 @@ const stats = [
                     <div className='flex gap-2 items-center text-xs'>
                         <div className='h-[1px] w-[40px] bg-white'></div>
                         <p>About</p>
+                        <div className='h-[1px] w-[40px] bg-white'></div>
                     </div>
                     <h1 className='text-4xl font-semibold'>
                         Who we are <br /> and <span className='bg-[#c5c8e6] rounded-md text-[#282d56]'>What we do.</span>
@@ -76,14 +77,14 @@ const stats = [
         </div>
         <marquee direction="right" behaviour="infinite" className='w-full h-[200px] flex items-center bg-gradient-to-r from-[#0C1634] via-[#889AAD] to-[#0C1634]'>
             <div className=' flex flex-row gap-24 justify-between items-center '>
-                <img src={logo1} className='h-full w-auto' />
-                <img src={logo2} className='h-full w-auto' />
-                <img src={logo3} className='h-full w-auto' />
-                <img src={logo4} className='h-full w-auto' />
-                <img src={logo1} className='h-full w-auto' />
-                <img src={logo2} className='h-full w-auto' />
-                <img src={logo3} className='h-full w-auto' />
-                <img src={logo4} className='h-full w-auto' />
+            <img src={logo1} className='h-full w-auto' />
+            <img src={logo2} className='h-full w-auto' />
+            <img src={logo3} className='h-full w-auto' />
+            <img src={logo4} className='h-full w-auto' />
+            <img src={logo1} className='h-full w-auto' />
+            <img src={logo2} className='h-full w-auto' />
+            <img src={logo3} className='h-full w-auto' />
+            <img src={logo4} className='h-full w-auto' />
             </div>
         </marquee>
     </div>
