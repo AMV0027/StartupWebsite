@@ -38,13 +38,13 @@ function ImgBlock({ source }) {
 
 function ServiceSection() {
   return (
-    <div className="w-screen min-h-screen bg-[#00031D]">
-      <div className=" absolute flex flex-row justify-between w-full h-screen mt-64">
+    <div className="w-screen min-h-full bg-[#00031D]">
+      <div className=" absolute flex flex-row justify-between w-full h-full mt-64">
         <img src={lights} className="w-1/3 rotate-180" />
         <img src={lights} className="w-1/3" />
       </div>
 
-      <div className="relative flex flex-col min-h-screen w-screen z-10">
+      <div className="relative flex flex-col min-h-full w-screen z-10">
         <div className="flex flex-row justify-between items-center">
           {/* content */}
           <div className="w-1/2 pl-12 flex flex-col items-center text-white">

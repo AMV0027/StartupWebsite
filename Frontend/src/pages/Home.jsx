@@ -5,7 +5,7 @@ import ServiceSection from "../components/ServiceSection";
 import ContactForm from "../components/ContactForm";
 import ProjectSection from "../components/ProjectSection";
 import TestimonialSection from "../components/testimonialSection";
-
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -16,6 +16,7 @@ function Home() {
       <ProjectSection/>
       <TestimonialSection />
       <ContactForm />
+      <Footer />
     </div>
   );
 }
