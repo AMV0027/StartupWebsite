@@ -48,7 +48,7 @@ function TestimonialSection() {
           <div className='h-[1px] w-[40px] bg-white'></div>
         </div>
         <h1 className='text-4xl font-semibold'>
-          What our clients Say.
+          What our clients Say
         </h1>
         <a className='flex items-center cursor-pointer mt-2 md:pl-12'>
           <div className='rounded-full border-2 p-2 m-1 flex items-center text-white'>
