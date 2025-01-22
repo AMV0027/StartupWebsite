@@ -49,7 +49,7 @@ function HeroSection() {
             <BlinkingStars />
             <img
                 src={mountain}
-                className="move-in absolute z-50 left-0 top-[70vh] sm:top-[40vh] md:top-[20vh] lg:-top-[0vh] xl:-top-[22vh] select-none will-change-transform"
+                className="move-in absolute z-50 left-0  select-none"
                 style={calculateParallax()}
             />
         </div>
