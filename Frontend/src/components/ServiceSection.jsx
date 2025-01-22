@@ -1,19 +1,19 @@
 import React from "react";
-import lights from "../assets/light.png";
-import hand from "../assets/hand.png";
-import hand1 from "../assets/hand1.png";
+import lights from "../assets/light.webp";
+import hand from "../assets/hand.webp";
+import hand1 from "../assets/hand1.webp";
 import { LuSquareArrowUpRight } from "react-icons/lu";
 import { PiGearSixLight } from "react-icons/pi";
 import { swing } from "react-animations";
 import { StyleSheet, css } from "aphrodite";
 import { FaRegLightbulb } from "react-icons/fa";
-import a1 from "../assets/a1.png";
-import a2 from "../assets/a2.png";
-import a3 from "../assets/a3.png";
-import a4 from "../assets/a4.png";
-import a5 from "../assets/a5.png";
-import a6 from "../assets/a6.png";
-import a7 from "../assets/a7.png";
+import a1 from "../assets/a1.webp";
+import a2 from "../assets/a2.webp";
+import a3 from "../assets/a3.webp";
+import a4 from "../assets/a4.webp";
+import a5 from "../assets/a5.webp";
+import a6 from "../assets/a6.webp";
+import a7 from "../assets/a7.webp";
 import { Tilt } from "react-tilt";
 
 const styles = StyleSheet.create({
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 
 function ImgBlock({ source }) {
   return (
-    <Tilt className="w-[200px] h-[200px]" >
+    <Tilt className="md:w-[200px] w-[110px] h-[110px] md:h-[200px] xl:w-[300px] xl:h-[300px]" >
       <img
         src={source}
         className=" rotate-left hover:drop-shadow-[0_0_10px_rgba(80,80,225,1)] transition-all ease-in-out "
@@ -38,18 +38,18 @@ function ImgBlock({ source }) {
 
 function ServiceSection() {
   return (
-    <div className="w-screen min-h-full bg-[#00031D]">
+    <div id="services" className="w-screen min-h-screen bg-[#00031D] overflow-hidden">
       <div className=" absolute flex flex-row justify-between w-full h-full mt-64">
         <img src={lights} className="w-1/3 rotate-180" />
         <img src={lights} className="w-1/3" />
       </div>
 
       <div className="relative flex flex-col min-h-full w-screen z-10">
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex md:flex-row flex-col justify-between items-center">
           {/* content */}
-          <div className="w-1/2 pl-12 flex flex-col items-center text-white">
+          <div className="md:w-1/2 w-full pl-12 mt-16 md:mt-0 flex flex-col items-center text-white">
             <div>
-              <div className="flex gap-2 items-center text-xs">
+              <div className="flex gap-2 items-center text-xs md:text-lg">
                 <div className="h-[1px] w-[40px] bg-white"></div>
                 <p>Services</p>
               </div>
@@ -57,10 +57,10 @@ function ServiceSection() {
                 What We Cook / Services
               </h1>
               <a className="flex items-center gap-2 cursor-pointer mt-2">
-                <div className="rounded-full border-2 p-1 m-1 flex items-center text-2xl">
+                <div className="rounded-full border-2 p-1 m-1 flex items-center text-2xl xl:text-3xl">
                   <PiGearSixLight />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col xl:text-2xl">
                   Know more about what we{" "}
                   <div className="flex items-center gap-2">
                     {" "}
@@ -76,7 +76,7 @@ function ServiceSection() {
             src={hand}
             className={`${css(
               styles.swing
-            )} w-1/2 select-none relative left-20`}
+            )} md:w-1/2 w-full select-none relative left-20 xl:top-40`}
           />
         </div>
 
@@ -103,22 +103,24 @@ function ServiceSection() {
             src={hand1}
             className={`${css(
               styles.swing
-            )} w-1/2 select-none relative right-20`}
+            )}  md:w-1/2 w-full select-none relative right-20 xl:bottom-30`}
           />
 
           {/* content */}
-          <div className="w-1/2 pr-12 flex flex-col items-center text-white">
-            <div>
-              <h1 className="text-4xl font-semibold">Domains We Handle</h1>
-              <a className="flex items-center cursor-pointer gap-2 mt-2">
-                <div className="rounded-full border-2 p-1 m-1 flex items-center text-2xl">
-                  <FaRegLightbulb />
-                </div>
-                <div className="flex flex-col text-xs">
-                  ML/DL, Gen-AI , Web Development, App Development, Data
-                  Analytics, Testers, UI/UX, Digital Media.
-                </div>
-              </a>
+          <div className="">
+            <div className="w-full pr-12 md:pr-32 xl:pr-72 flex md:flex-row flex-col items-center text-white">
+              <div>
+                <h1 className="text-2xl xl:text-4xl font-semibold">Domains We Handle</h1>
+                <a className="flex items-center cursor-pointer gap-2 mt-2">
+                  <div className="rounded-full border-2 p-1 m-1 flex items-center text-2xl md:text-3xl">
+                    <FaRegLightbulb />
+                  </div>
+                  <div className="flex flex-col text-xs md:text-md xl:text-xl">
+                    ML/DL, Gen-AI , Web Development, App Development, Data
+                    Analytics, Testers, UI/UX, Digital Media.
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

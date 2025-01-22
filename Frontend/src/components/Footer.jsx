@@ -6,7 +6,7 @@ function Footer() {
     <footer className="bg-black text-white py-8">
       {/* Container */}
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        
+
         {/* About Section */}
         <div>
           <h2 className="text-xl font-bold mb-4">About Us</h2>
@@ -30,9 +30,9 @@ function Footer() {
         <div>
           <h2 className="text-xl font-bold mb-4">Contact Us</h2>
           <ul className="space-y-2 text-sm">
-            <li className="text-gray-400">Phone: +1 234 567 890</li>
-            <li className="text-gray-400">Email: info@business.com</li>
-            <li className="text-gray-400">Address: 123 Business Lane, NY</li>
+            <li className="text-gray-400">Phone: +91 97888 18448</li>
+            <li className="text-gray-400">Email: contact@nexoris.com</li>
+            <li className="text-gray-400">Address: Coimbatore-641022, Tamilnadu, India</li>
           </ul>
         </div>
 
@@ -71,7 +71,7 @@ function Footer() {
       {/* Bottom Bar */}
       <div className="mt-8 border-t border-gray-700 pt-4">
         <p className="text-center text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Your Business Name. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Nexoris. All Rights Reserved.
         </p>
       </div>
     </footer>
