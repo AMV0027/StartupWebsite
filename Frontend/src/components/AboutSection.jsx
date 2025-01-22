@@ -15,7 +15,7 @@ function AboutSection() {
   ];
 
   return (
-    <div id='about' className='w-screen min-h-screen overflow-clip bg-[#00031D] relative z-20 pt-64 text-white flex flex-col justify-between'>
+    <div id='about' className='w-screen min-h-screen overflow-clip bg-[#00031D] relative z-20 pt-32 text-white flex flex-col justify-between'>
 
       {/* About section */}
       <div className='mb-24 mt-auto flex flex-col md:flex-row justify-evenly items-center w-screen h-full'>
