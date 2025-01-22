@@ -29,7 +29,7 @@ function HeroSection() {
         const mouseParallax = (mousePosition.y - window.innerHeight / 1) / 20;
         const scrollParallax = scrollPosition * 0.2;
         return {
-            transform: `translate3d(0, ${mouseParallax + scrollParallax + 90}px, 0)`,
+            transform: `translate3d(0, ${mouseParallax + scrollParallax, 0}px, 0)`,
         };
     };
 
@@ -49,8 +49,8 @@ function HeroSection() {
             <BlinkingStars />
             <img
                 src={mountain}
-                className="move-in absolute z-30 left-0 bottom-0 translate-y-14  select-none"
-                style={calculateParallax()}
+                className="move-in absolute z-30 left-0 bottom-0 translate-y-10 md:translate-y-32 xl:translate-y-72 select-none"
+            // style={calculateParallax()}
             />
         </div>
     );
