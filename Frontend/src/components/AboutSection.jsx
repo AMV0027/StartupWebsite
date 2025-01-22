@@ -15,13 +15,13 @@ function AboutSection() {
   ];
 
   return (
-    <div id='about' className='w-screen min-h-screen overflow-clip bg-[#00031D] relative text-white flex flex-col justify-between'>
+    <div id='about' className='w-screen min-h-screen overflow-clip bg-[#00031D] relative z-40 pt-8 text-white flex flex-col justify-between'>
 
       {/* About section */}
-      <div className='mb-24 mt-24 mt-auto flex flex-col md:flex-row justify-evenly items-center w-screen h-full'>
+      <div className='mb-24 mt-auto flex flex-col md:flex-row justify-evenly items-center w-screen h-full'>
 
         {/* Left Column - About Content */}
-        <div className='md:w-1/2 w-full flex flex-col items-start md:items-center justify-start md:justify-center pl-12 md:pl-0 mb-10 md:mb-0'>
+        <div className='md:w-1/2 w-full flex flex-col items-start md:items-center justify-start md:justify-center pl-12 md:pl-12 mb-10 md:mb-0'>
           <div>
             <div className='flex gap-2 items-center text-xs  md:text-lg'>
               <div className='h-[1px] w-[40px] bg-white'></div>
@@ -35,8 +35,8 @@ function AboutSection() {
               <div className='rounded-full md:text-3xl border-2 p-2 m-1 flex items-center'>
                 <IoBookOutline className='text-white' />
               </div>
-              <div className='flex flex-col md:text-2xl md:ml-3'>
-                Know more about our company <div className='flex items-center gap-2'>company <LuSquareArrowUpRight /></div>
+              <div className='flex flex-col md:text-xl md:ml-3'>
+                Know more about our <div className='flex items-center gap-2'>company <LuSquareArrowUpRight /></div>
               </div>
             </a>
           </div>
