@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ServiceSection from "../components/ServiceSection";
 import ContactForm from "../components/ContactForm";
 import ProjectSection from "../components/ProjectSection";
-import TestimonialSection from "../components/testimonialSection";
+import TestimonialSection from "../components/TestimonialSection";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
       <HeroSection />
       <AboutSection />
       <ServiceSection />
-      <ProjectSection/>
+      <ProjectSection />
       <TestimonialSection />
       <ContactForm />
       <Footer />
