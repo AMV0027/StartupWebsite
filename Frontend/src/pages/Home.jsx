@@ -6,6 +6,7 @@ import ContactForm from "../components/ContactForm";
 import ProjectSection from "../components/ProjectSection";
 import TestimonialSection from "../components/TestimonialSection";
 import Footer from "../components/Footer";
+import FoundersSection from "../components/FoundersSection";
 
 function Home() {
   return (
@@ -14,7 +15,8 @@ function Home() {
       <AboutSection />
       <ServiceSection />
       <ProjectSection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
+      <FoundersSection />
       <ContactForm />
       <Footer />
     </div>

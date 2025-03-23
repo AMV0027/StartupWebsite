@@ -50,20 +50,6 @@ function AboutSection() {
           <p className='font-thin text-sm  md:text-lg xl:text-xl'>
             We offer a range of services, including website design, development, and innovative solutions to enhance brand identity and user engagement. We also build platforms that promote learning and skill development, connecting technology with education. Whether you're a startup, established business, or learner, we’re here to help you succeed in the digital world.
           </p>
-
-          {/* Stats Section */}
-          <div className='flex flex-row justify-between'>
-            {stats.map((item, index) => (
-              <div key={index} className='flex flex-col items-center justify-start'>
-                <h1 className='text-xl md:text-2xl font-bold'>
-                  {item.value}
-                </h1>
-                <p className='text-xs md:text-sm'>
-                  {item.name}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
