@@ -7,15 +7,15 @@ function FoundersSection() {
     const founders = [
         {
             name: 'Mr. G. NARENDRAN',
-            title: 'Founder',
+            title: 'Founder & CEO',
             image: 'https://srec.ac.in/uploads/resource/src/ikFSitG9nV210720221015422250-narendran-g.jpg',
             description: 'Founded the company and spearheaded its vision for growth and innovation.',
         },
         {
             name: 'Harisudhan M',
-            title: 'CEO',
+            title: 'CTO',
             image: harisudhan,
-            description: 'CEO of the company, responsible for strategic leadership and scaling operations.',
+            description: 'CTO of the company, responsible for Technical and scaling operations.',
         },
         {
             name: 'Anvin P Shibu',
